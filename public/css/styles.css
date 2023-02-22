@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --default-padding: 0px;
+    --default-margin: 0px;    
+}
+
+
+
+body{
+    background-color: #ebebeb;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+header {
+    background-color: #EAC926;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0; 
+    overflow: auto;
+}
+
+.logoMeli {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 50vw;
+    justify-content: center;
+
+}
+
+.busqueda {
+    width: 50vw;
+    left: 53%;
+}
+
+.form-control {
+    width: 100%;
+}
+
+.icoLu {
+    background-color: white;
+    border-radius: 4px;
+    border: solid thin;
+}
+
+#menu { 
+    padding: 10px;
+    margin: 20px 0px;
+    display: block;
+    position: relative;
+    margin-left: 42vw;
+    margin-right: 42vw;
+
+
+}
+
+
+#butoMenu {
+    background-color: #0044AA;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor:pointer;
+}
+
+#butoMenu:hover {
+    background-color: #0022AA;
+    cursor: pointer;
+}
+
+  
+.left-navbar,
+.right-navbar {
+    font-size: 1.5em;
+  }
+  
+.left-navbar{
+    display: block;
+    padding: 5px 0px;
+}
+.right-navbar {
+    display: block;
+    padding: 5px 0px;
+}
+
+.homeBanner {
+    width: 100%;
+    display: block;
+}
+
+div{
+    background-color: #EAC926;
+}
+
+.principal {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 90%;
+}
+
+#basado, #ofertas {
+    font-size: 24px;
+    text-align: center;
+    width: 90%;
+    color: #666;
+    margin: 10px 0px;
+}
+
+.productos {
+    background-color: white;
+    padding: 15px;
+    margin: 10px 30px;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.imagen {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    align-self: center;
+}
+
+.borderAbajo {
+    color: #ebebeb;
+    height: 1px;
+    border: solid thin;
+}
+
+.iconos {
+    color: #39b54a;
+    background-color: white;
+    padding: 5px;
+    border: solid 1px;
+    border-radius: 100%;
+    position: absolute;
+    top: -30%;
+    right: 10%;
+}
+
+.productos div {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.precios {
+    padding: 5px;
+    font-size: 18px;
+    align-self: center;
+
+}
+
+.descuentos{
+    color: #39b54a;
+    padding: 5px;
+    font-size: 16px;
+    align-self: center;
+    
+}
+
+.descripciones {
+    padding: 5px;
+    font-size: 16px;
+    width: 100%;
+    color: #666;
+}
+
+p {
+    font-size: 12px;
+    text-align: justify;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h6 {
+    text-align: center;
+}
+
+
+
+
+
+
+footer {
+    background-color: white;
+    color: #666;
+    padding: 20px 5%;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.piePagina {
+    margin: 20px 0px;
+}
+
+.copyright {
+    font-size: x-small;
+    text-align: center;
+}
+
+/* Media Queries */
+
+@media (max-width: 360px) {
+    nav {display: none;}
+
+}
+
+@media screen and (min-width: 361px) {
+    root { box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    } 
+    #menu { display: none}
+    }
+
+
+
+
+@media (min-width: 1024px) {
+        .principal {
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            column-gap: 15px;
+        }
+    }
+        
+@media only screen and (min-width:768px)  and (max-width:1023px) {
+        .tablet {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        } }
+
+
+.fa-truck {
+    position: absolute;
+    top: -15px;
+    right: -20px;
+    border: 1px solid #39b54a;
+    border-radius: 50%;
+    
+    width: 32px;
+    height: 32px;
+    padding: 5px;
+    background-color: #FFF;
+
+    font-size: large;
+
+    transition: transform 1s;
+}
+
+/* Login.HTML */
+
+.cajaLogin {
+    padding: 0px 20px;
+}
+
+.ingreso {
+    width: 100%;
+    border-style: none;
+    padding: 10px;
+    margin: 20px 0px;
+    border-radius: 5px;
+}
+
+#botonIngreso {
+    width: 100%;
+    border-style: none;
+    padding: 10px;
+    margin: 20px 0px;
+    border-radius: 5px;
+    color: white;
+    background-color: #0044AA;
+}
+
+#botonIngreso:hover {
+    background-color: #0022AA;
+}
+
+/* Register.HTML */
+
+#botonReseteo {
+    width: 100%;
+    border-style: none;
+    padding: 10px;
+    margin: 20px 0px;
+    border-radius: 5px;
+    color: white;
+    background-color: #AA0044;
+}
+
+#botonReseteo:hover {
+    background-color: #CC1155;
+}
+
+.regnegrita {
+    font-weight: bold;
+}
+
+.usuario {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #ebebeb;
+}
+
+.profileUsuario {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 15px;
+    background-color: #ebebeb;
+}
+
+.usuario p {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    
+}
+.usuario p input {
+    width: 20%;
+}
+
+/* error.HTML */
+
+#noExiste {
+    display: flex;  
+    position: sticky;
+    left: 45vw;
+    right: 55vw;
+    justify-content: center;   
+    flex-wrap: wrap;
+    height: 280px;
+    margin-right: auto;
+    margin-left: auto;
+} 
+
+.cuatroCientos {
+    margin: 30px;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+
+
